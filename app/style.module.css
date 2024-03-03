@@ -1,0 +1,44 @@
+.shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shape svg {
+    position: relative;
+    display: block;
+    width: calc(107% + 1.3px);
+    height: 198px;
+    transform: rotateY(180deg);
+}
+
+.shape .fill {
+    fill: #FFFFFF;
+}
+
+/* for bottom custom curve */
+
+.custom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom svg {
+    position: relative;
+    display: block;
+    width: calc(107% + 1.3px);
+    height: 198px;
+    transform: rotateY(180deg);
+}
+
+.custom .f {
+    fill: #FFFFFF;
+}
