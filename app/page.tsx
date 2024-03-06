@@ -1,6 +1,7 @@
 
 import Curve from "./components/curve";
 import Header from "./components/header";
+import Info from "./components/info";
 import Why from "./components/why";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Why />
       <Curve />
+      <Info />
     </div>
   );
 }
