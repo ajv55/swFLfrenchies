@@ -31,10 +31,10 @@ export default function Card({name, age, gender, price, imgUrl}: CardProp) {
 
 
   return (
-    <motion.div style={{scale: scale, opacity: opacity, x, }} ref={ref} className='bg-slate-200 w-[17rem] h-[24rem] flex flex-col justify-start items-center py-4 px-2 rounded-lg'>
+    <motion.div style={{scale: scale, opacity: opacity, x, }} ref={ref} className='bg-slate-100 w-[17rem] h-[24rem] flex flex-col justify-start items-center py-4 px-2 rounded-lg'>
         <motion.div className='relative p-3'>
             <Image src={imgUrl} alt={name} width={250} height={250}></Image>
-            <motion.h1 style={{scale: textScale, opacity: h1Opacity, x, }}  className='text-center text-xs bg-slate-100 absolute top-0 right-0 px-3 py-1 rounded-2xl '>{age}</motion.h1>
+            <motion.h1 style={{scale: textScale, opacity: h1Opacity, x, }}  className='text-center text-xs bg-orange-300  absolute top-0 right-0 px-3 py-1 rounded-2xl '>{age}</motion.h1>
         </motion.div>
         <div className='flex justify-evenly items-center w-full px-1 py-2'>
             <motion.h1 style={{scale: textScale, opacity: h1Opacity, x, }}  className='text-center text-3xl'>{name}</motion.h1>
