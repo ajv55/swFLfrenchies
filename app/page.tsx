@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Info from "./components/info";
 import Why from "./components/why";
 import Form from "./components/form";
+import Ready from "./components/ready";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Why />
       <Curve />
       <Info />
+      <Ready />
       <Form />
     </div>
   );
