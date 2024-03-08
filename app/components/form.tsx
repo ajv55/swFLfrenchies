@@ -26,7 +26,6 @@ export default function Form() {
     }, [sendEmailState])
 
 
-
   return (
     <form action={sendEmailAction} className=' rounded-md flex flex-col justify-start items-center w-full h-content p-1.5 mt-8 mb-8'>
         <h1 className={`${alex_brush.className} text-center text-7xl`}>Contact Us</h1>
