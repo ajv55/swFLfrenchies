@@ -5,6 +5,7 @@ import { alex_brush } from '../font/font';
 //components
 import PuppiesList from '../components/puppiesList';
 
+
 export default function Page() {
   return (
     <div>

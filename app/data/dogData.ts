@@ -9,6 +9,7 @@ export const dogData = [{
     age: '12 weeks',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
+    breed: 'French Bulldog'
 },
 {
     name: 'Puppy 2',
@@ -21,6 +22,7 @@ export const dogData = [{
     age: '12 weeks',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
+    breed: 'French Bulldog'
 },
 {
     name: 'Puppy 3',
@@ -33,6 +35,7 @@ export const dogData = [{
     age: '12 weeks',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
+    breed: 'French Bulldog'
 },
 {
     name: 'Puppy 4',
@@ -45,6 +48,7 @@ export const dogData = [{
     age: '12 weeks',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
+    breed: 'French Bulldog'
 },
 {
     name: 'Puppy 5',
@@ -57,6 +61,7 @@ export const dogData = [{
     age: '12 weeks',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
+    breed: 'French Bulldog'
 },
 {
     name: 'Puppy 6',
@@ -69,6 +74,7 @@ export const dogData = [{
     age: '12 weeks',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
+    breed: 'French Bulldog'
 },
 {
     name: 'Puppy 7',
@@ -81,6 +87,7 @@ export const dogData = [{
     age: '12 weeks',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
+    breed: 'French Bulldog'
 },
 {
     name: 'Puppy 8',
@@ -93,6 +100,7 @@ export const dogData = [{
     age: '12 weeks',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
+    breed: 'French Bulldog'
 },
 {
     name: 'Puppy 9',
@@ -105,5 +113,6 @@ export const dogData = [{
     age: '12 weeks',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
+    breed: 'French Bulldog'
 }
 ]
