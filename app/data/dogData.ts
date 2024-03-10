@@ -6,10 +6,11 @@ export const dogData = [{
     gender: 'Male',
     color: 'tan with brown',
     id: 1,
-    age: '12 weeks',
+    age: '12 weeks old',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
-    breed: 'French Bulldog'
+    breed: 'French Bulldog',
+    description: 'Puppy 1 is a charming female Frenchie with a sleek coat of fawn and white. Her playful antics and sweet demeanor make her the perfect companion for families seeking a loyal and affectionate furry friend.'
 },
 {
     name: 'Puppy 2',
@@ -19,10 +20,11 @@ export const dogData = [{
     gender: 'Female',
     color: 'tan with brown',
     id: 2,
-    age: '12 weeks',
+    age: '12 weeks old',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
-    breed: 'French Bulldog'
+    breed: 'French Bulldog',
+    description: 'Meet Puppy 2, the handsome male French Bulldog with a striking brindle coat and soulful eyes. Known for his adventurous spirit and boundless energy, Max is always ready for fun-filled adventures with his new family.'
 },
 {
     name: 'Puppy 3',
@@ -32,10 +34,11 @@ export const dogData = [{
     gender: 'Female',
     color: 'tan with brown',
     id: 3,
-    age: '12 weeks',
+    age: '12 weeks old',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
-    breed: 'French Bulldog'
+    breed: 'French Bulldog',
+    description: 'Puppy 3 is a delightful female Frenchie with a coat as black as midnight and a heart as pure as gold. Her gentle nature and loving disposition make her an ideal companion for anyone seeking a loyal and devoted furry companion.'
 },
 {
     name: 'Puppy 4',
@@ -45,10 +48,11 @@ export const dogData = [{
     gender: 'Male',
     color: 'tan with brown',
     id: 4,
-    age: '12 weeks',
+    age: '12 weeks old',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
-    breed: 'French Bulldog'
+    breed: 'French Bulldog',
+    description: 'Puppy 4 is a playful male French Bulldog with a coat of creamy white and adorable bat ears that will steal your heart. With his affectionate personality and playful antics, Oliver is sure to bring endless joy and laughter into your home.'
 },
 {
     name: 'Puppy 5',
@@ -58,10 +62,11 @@ export const dogData = [{
     gender: 'Male',
     color: 'tan with brown',
     id: 5,
-    age: '12 weeks',
+    age: '12 weeks old',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
-    breed: 'French Bulldog'
+    breed: 'French Bulldog',
+    description: 'Puppy 5 is a graceful female Frenchie with a coat of rare blue and tan markings that shimmer in the sunlight. Her elegant demeanor and gentle nature make her the perfect addition to any loving family seeking a loyal and devoted companion.'
 },
 {
     name: 'Puppy 6',
@@ -71,10 +76,11 @@ export const dogData = [{
     gender: 'Female',
     color: 'tan with brown',
     id: 6,
-    age: '12 weeks',
+    age: '12 weeks old',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
-    breed: 'French Bulldog'
+    breed: 'French Bulldog',
+    description: 'Puppy 6 is a spirited male French Bulldog with a coat of brindle and white that reflects his adventurous spirit. With his boundless energy and playful personality, Rocky is always up for an outdoor adventure or a cozy cuddle session on the couch.'
 },
 {
     name: 'Puppy 7',
@@ -84,10 +90,11 @@ export const dogData = [{
     gender: 'Male',
     color: 'tan with brown',
     id: 7,
-    age: '12 weeks',
+    age: '12 weeks old',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
-    breed: 'French Bulldog'
+    breed: 'French Bulldog',
+    description: 'Puppy 7 is a precious female Frenchie with a coat of soft fawn and a heart full of love. Her sweet disposition and affectionate nature make her the perfect furry friend for families seeking a loyal and devoted companion.'
 },
 {
     name: 'Puppy 8',
@@ -96,11 +103,12 @@ export const dogData = [{
     price: 2500,
     gender: 'Male',
     color: 'tan with brown',
-    id: 7,
-    age: '12 weeks',
+    id: 8,
+    age: '12 weeks old',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
-    breed: 'French Bulldog'
+    breed: 'French Bulldog',
+    description: 'Puppy 8 is a dashing male French Bulldog with a coat of rare lilac and tan that sets him apart from the rest. With his charming personality and playful spirit, Leo is sure to capture the hearts of everyone he meets.'
 },
 {
     name: 'Puppy 9',
@@ -109,10 +117,11 @@ export const dogData = [{
     price: 2500,
     gender: 'Male',
     color: 'tan with brown',
-    id: 7,
-    age: '12 weeks',
+    id: 8,
+    age: '12 weeks old',
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
-    breed: 'French Bulldog'
+    breed: 'French Bulldog',
+    description: 'Puppy 9 is an adorable female Frenchie with a coat of classic pied markings and a playful twinkle in her eye. Her friendly demeanor and gentle nature make her the perfect companion for families seeking a loving and affectionate furry friend.'
 }
 ]

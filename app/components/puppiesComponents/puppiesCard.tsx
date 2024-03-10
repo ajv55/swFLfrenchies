@@ -7,15 +7,18 @@ import { useRef } from 'react';
 import { BackgroundBeams } from '../bg';
 import { IoMdMale } from "react-icons/io";
 import { IoMdFemale } from "react-icons/io";
+import { Button } from "../../components/movingButton";
 
 type PuppiesCardProps = {
     name: string,
     birthday: string,
     gender: string,
     price: number,
+    age: string,
+    description: string
 }
 
-export default function PuppiesCard({name, birthday, gender, price}: PuppiesCardProps) {
+export default function PuppiesCard({name, birthday, gender, price, age, description}: PuppiesCardProps) {
 
   const ref = useRef(null);
 
@@ -29,12 +32,16 @@ export default function PuppiesCard({name, birthday, gender, price}: PuppiesCard
 
   return (
 
-    <motion.div ref={ref} style={{scale, opacity}} className='border relative w-[21rem] h-[36rem] flex flex-col justify-center items-center gap-24 bg-orange-100 mt-10 mb-8'>
+    <motion.div ref={ref} style={{scale, opacity}} className=' relative w-[21rem] drop-shadow-xl h-[50rem] flex flex-col justify-center items-center gap-24 bg-fuchsia-100 mt-10 mb-8'>
         <Image className=' absolute top-3 left-2'   src={Pup} alt='pup' width={352} height={100}></Image>
-        <div className='border border-red-400 flex flex-col justify-start items-start w-full h-2/4 mt-72 p-2'>
+        <div className='[text-shadow:2px_1px_1px_var(--tw-shadow-color)] shadow-purple-300 flex flex-col justify-start items-start w-full h-content mt-72 p-2 gap-5'>
           <h1 className='text-3xl flex justify-center items-center gap-5'>{name} {gender === 'Male' ? <IoMdMale size={30} color='lightBlue' /> : <IoMdFemale size={30} color='lightPink' /> }</h1>
-          <h2>{birthday}</h2>
-        </div>
+          <h2 className='text-2xl flex items-center gap-5'><span className='text-xl text-slate-500 opacity-35 '>Birthday</span>{birthday}</h2>
+          <h2 className='text-2xl flex items-center gap-5'><span className='text-xl text-slate-500 opacity-35 '>Age</span>{age}</h2>
+          <h2 className='text-2xl p-1 flex items-center gap-5'><span className='text-xl text-slate-500 opacity-35 '>Price</span>${price}.00</h2>
+          <p className=' text-md '>{description}</p>
+          <Button className='text-xl' >Reserve</Button>
+        </div>     
     </motion.div> 
     
   )

@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} relative`}>
+      <body className={`${inter.className} antialiased relative`}>
         <Nav />
         <Toaster position="bottom-right" reverseOrder={false}/>
         {children}

@@ -23,6 +23,9 @@ const config: Config = {
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
       },
+      textShadow: {
+        'text-shadow': 'black 2px 5px;'
+      },
       keyframes: {
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
