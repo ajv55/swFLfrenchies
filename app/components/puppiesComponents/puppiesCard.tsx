@@ -27,7 +27,7 @@ export default function PuppiesCard({name, birthday, gender, price, age, descrip
     offset: ['start end', 'end end']
   })
 
-  const scale = useTransform(scrollYProgress, [0.2, 0.6], [0.4, 1], {ease: easeInOut});
+  const scale = useTransform(scrollYProgress, [0.2, 1], [0.4, 1], {ease: easeInOut});
   const opacity = useTransform(scrollYProgress, [0.2, 0.6], [0.5, 1])
 
   return (

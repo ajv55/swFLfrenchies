@@ -1,7 +1,13 @@
 import React from 'react'
+import {BackgroundGradientAnimationDemo} from '../components/contactHeader';
+import Form from '../components/form';
 
 export default function Page() {
   return (
-    <div>Contact page goes here</div>
+    <div>
+      <BackgroundGradientAnimationDemo></BackgroundGradientAnimationDemo>
+      <Form />
+    </div>
+    
   )
 }
