@@ -23,7 +23,8 @@ export const sendEmail = async (prevState: State, formData: FormData) => {
             from: 'onboarding@resend.dev',
             to: 'abejevilla55@gmail.com',
             subject: 'Form submisson',
-            react: EmailTemplate({email, lastname, firstname, message})
+            react: EmailTemplate({email, lastname, firstname, message}),
+            reply_to: email
         })
 
         return {

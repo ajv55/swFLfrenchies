@@ -5,6 +5,7 @@ import { alex_brush } from '../font/font';
 //components
 import PuppiesList from '../components/puppiesList';
 import PuppiesInfo from '../components/puppiesComponents/puppiesInfo';
+import Form from '../components/form';
 
 
 export default function Page() {
@@ -17,6 +18,7 @@ export default function Page() {
       </div>
       <PuppiesList />
       <PuppiesInfo />
+      <Form />
     </div>
   )
 }
