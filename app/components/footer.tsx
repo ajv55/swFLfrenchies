@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="w-full flex justify-center items-center text-sm text-center gap-2 text-white">
             <Link className=" hover:underline underline-offset-2" href='/'>Home</Link>
             <Link className=" hover:underline underline-offset-2" href='/Puppies'>Available Puppies</Link>
-            <Link className=" hover:underline underline-offset-2" href='/Upcoming'>Upcoming Litter</Link>
+            <Link className=" hover:underline underline-offset-2" href='/Contact'>Contact Us</Link>
         </div>
         <div className=" w-full h-8 flex justify-center items-end mb-10 text-white">
           <p className="" >© {date} SWFLFrenchies. All rights reserved.</p>

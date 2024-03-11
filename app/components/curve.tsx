@@ -3,6 +3,7 @@ import { dogData } from '../data/dogData';
 import style from '../style.module.css';
 import Card from './card';
 import {alex_brush} from '../font/font';
+import Link from 'next/link';
 
 type DogData = {
     name: string;
@@ -39,7 +40,7 @@ export default function Curve() {
         <div className='mt-64 mb-72 flex flex-col justify-start items-center gap-32'>
            <h1 className={`${alex_brush.className} text-white text-center text-6xl  animate-pulse`}>The Puppies</h1>
         {dogData.map((dd: DogData) => {
-            return <Card key={dd.name} price={dd.price} gender={dd.gender} age={dd.age} name={dd.name} imgUrl={dd.imgUrl} />
+            return <Link key={dd.name} href='/Puppies'><Card  price={dd.price} gender={dd.gender} age={dd.age} name={dd.name} imgUrl={dd.imgUrl} /></Link>
           } )}
         </div>
 

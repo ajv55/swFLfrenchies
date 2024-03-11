@@ -1,158 +1,104 @@
 "use client";
-
-import React, { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 
-export const GlowingStarsBackgroundCard = ({
-  className,
-  children,
-}: {
-  className?: string;
-  children?: React.ReactNode;
-}) => {
-  const [mouseEnter, setMouseEnter] = useState(false);
+export function LampDemo() {
+  return (
+    <LampContainer>
+      <motion.h1
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+      >
+        Build lamps <br /> the right way
+      </motion.h1>
+    </LampContainer>
+  );
+}
 
+export const LampContainer = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
   return (
     <div
-      onMouseEnter={() => {
-        setMouseEnter(true);
-      }}
-      onMouseLeave={() => {
-        setMouseEnter(false);
-      }}
       className={cn(
-        "bg-[linear-gradient(110deg,#333_0.6%,#222)] p-4 max-w-md max-h-[20rem] h-full w-full rounded-xl border border-[#eaeaea] dark:border-neutral-600",
+        "relative flex min-h-[45rem] flex-col items-center justify-center overflow-hidden bg-slate-950 w-full z-0",
         className
       )}
     >
-      <div className="flex justify-center items-center">
-        <Illustration mouseEnter={mouseEnter} />
+      <div className="relative flex w-full flex-1 scale-y-135 items-center justify-center isolate z-0 ">
+        <motion.div
+          initial={{ opacity: 0.5, width: "15rem" }}
+          whileInView={{ opacity: 1, width: "20rem" }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          style={{
+            backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
+          }}
+          className="absolute inset-auto right-1/2 h-56 overflow-visible w-[30rem] bg-gradient-conic from-purple-500 via-transparent to-transparent text-white [--conic-position:from_70deg_at_center_top]"
+        >
+          <div className="absolute  w-[100%] left-0 bg-slate-950 h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
+          <div className="absolute  w-40 h-[100%] left-0 bg-slate-950  bottom-0 z-20 [mask-image:linear-gradient(to_right,white,transparent)]" />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.5, width: "15rem" }}
+          whileInView={{ opacity: 1, width: "20rem" }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          style={{
+            backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
+          }}
+          className="absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-transparent to-purple-500 text-white [--conic-position:from_290deg_at_center_top]"
+        >
+          <div className="absolute  w-24 h-[100%] right-0 bg-slate-950  bottom-0 z-20 [mask-image:linear-gradient(to_left,white,transparent)]" />
+          <div className="absolute  w-[100%] right-0 bg-slate-950 h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
+        </motion.div>
+        <div className="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-slate-950 blur-2xl"></div>
+        <div className="absolute top-1/2 z-50 h-48 w-full bg-transparent opacity-10 backdrop-blur-md"></div>
+        <div className="absolute inset-auto z-50 h-36 w-[28rem] -translate-y-1/2 rounded-full bg-purple-500 opacity-50 blur-3xl"></div>
+        <motion.div
+          initial={{ width: "12rem" }}
+          whileInView={{ width: "16rem" }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-teal-400 blur-2xl"
+        ></motion.div>
+        <motion.div
+          initial={{ width: "100%" }}
+          whileInView={{ width: "10rem" }}
+          transition={{
+            delay: 0.4,
+            duration: 1.0,
+            ease: "easeInOut",
+          }}
+          className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-purple-400 "
+        ></motion.div>
+
+        <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "></div>
       </div>
-      <div className="px-2 pb-6">{children}</div>
+
+      <div className="relative z-50 flex -translate-y-56 flex-col items-center px-5">
+        {children}
+      </div>
     </div>
-  );
-};
-
-export const GlowingStarsDescription = ({
-  className,
-  children,
-}: {
-  className?: string;
-  children?: React.ReactNode;
-}) => {
-  return (
-    <p className={cn("text-base text-white max-w-[16rem]", className)}>
-      {children}
-    </p>
-  );
-};
-
-export const GlowingStarsTitle = ({
-  className,
-  children,
-}: {
-  className?: string;
-  children?: React.ReactNode;
-}) => {
-  return (
-    <h2 className={cn("font-bold text-2xl text-[#eaeaea]", className)}>
-      {children}
-    </h2>
-  );
-};
-
-export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
-  const stars = 108;
-  const columns = 18;
-
-  const [glowingStars, setGlowingStars] = useState<number[]>([]);
-
-  const highlightedStars = useRef<number[]>([]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      highlightedStars.current = Array.from({ length: 5 }, () =>
-        Math.floor(Math.random() * stars)
-      );
-      setGlowingStars([...highlightedStars.current]);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <div
-      className="h-48 p-1 w-full"
-      style={{
-        display: "grid",
-        gridTemplateColumns: `repeat(${columns}, 1fr)`,
-        gap: `1px`,
-      }}
-    >
-      {[...Array(stars)].map((_, starIdx) => {
-        const isGlowing = glowingStars.includes(starIdx);
-        const delay = (starIdx % 10) * 0.1;
-        const staticDelay = starIdx * 0.01;
-        return (
-          <div
-            key={`matrix-col-${starIdx}}`}
-            className="relative flex items-center justify-center"
-          >
-            <Star
-              isGlowing={mouseEnter ? true : isGlowing}
-              delay={mouseEnter ? staticDelay : delay}
-            />
-            {mouseEnter && <Glow delay={staticDelay} />}
-            <AnimatePresence mode="wait">
-              {isGlowing && <Glow delay={delay} />}
-            </AnimatePresence>
-          </div>
-        );
-      })}
-    </div>
-  );
-};
-
-const Star = ({ isGlowing, delay }: { isGlowing: boolean; delay: number }) => {
-  return (
-    <motion.div
-      key={delay}
-      initial={{
-        scale: 1,
-      }}
-      animate={{
-        scale: isGlowing ? [1, 1.2, 2.5, 2.2, 1.5] : 1,
-        background: isGlowing ? "#fff" : "#666",
-      }}
-      transition={{
-        duration: 2,
-        ease: "easeInOut",
-        delay: delay,
-      }}
-      className={cn("bg-[#666] h-[1px] w-[1px] rounded-full relative z-20")}
-    ></motion.div>
-  );
-};
-
-const Glow = ({ delay }: { delay: number }) => {
-  return (
-    <motion.div
-      initial={{
-        opacity: 0,
-      }}
-      animate={{
-        opacity: 1,
-      }}
-      transition={{
-        duration: 2,
-        ease: "easeInOut",
-        delay: delay,
-      }}
-      exit={{
-        opacity: 0,
-      }}
-      className="absolute  left-1/2 -translate-x-1/2 z-10 h-[4px] w-[4px] rounded-full bg-blue-500 blur-[1px] shadow-2xl shadow-blue-400"
-    />
   );
 };
