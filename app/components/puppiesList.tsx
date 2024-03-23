@@ -18,6 +18,8 @@ type DogData = {
   dadWeight: string;
   breed: string;
   description: string;
+  weight?: string;
+  pupWeight: string;
 }
 
 export default function PuppiesList() {
@@ -31,7 +33,14 @@ export default function PuppiesList() {
                 birthday: dd.birthday,
                 gender: dd.gender,
                 age: dd.age,
-                description: dd.description
+                description: dd.description,
+                price: dd.price,
+                weight: dd.weight,
+                momsWeight: dd.momWeight,
+                dadsWeight: dd.dadWeight,
+                breed: dd.breed,
+                imgUrl: dd.imgUrl,
+                pupWeight: dd.pupWeight
               }
             }}><PuppiesCard key={dd.name} name={dd.name} price={dd.price} gender={dd.gender} birthday={dd.birthday} age={dd.age} description={dd.description} /></Link>
           } )}

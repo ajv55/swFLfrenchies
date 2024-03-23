@@ -4,7 +4,7 @@ import { Meteors } from './3dcard';
 export default function Info() {
   return (
     <div className=" w-full h-content mt-28 mb-28 flex flex-col justify-center items-center gap-10">
-        <p className={`${roboto.className} text-center text-xl p-2`}>Welcoming a <span className={`${alex_brush.className} text-4xl text-fuchsia-400`}>French Bulldog Puppy</span> into your home is an exciting and rewarding experience. These adorable companions have unique characteristics and needs that set them apart from other breeds. Here&#39;s what you need to know to understand and care for your frenchie puppy</p>
+        <p className={`${roboto.className} text-center text-xl p-2`}>Welcoming a <span className={`${alex_brush.className} text-4xl text-fuchsia-400`}>French Bulldog Puppy</span> into your home is an exciting and rewarding experience. These adorable companions have unique characteristics and needs that set them apart from other breeds. <span className='font-bold'>Here&#39;s what you need to know to understand and care for your frenchie puppy</span></p>
         <div className={`${roboto.className} bg-slate-700 w-[22rem] h-[31rem] rounded-lg relative flex justify-center items-center flex-col gap-14 p-2`}>
             <h2 className='text-center text-[25rem] text-white absolute top-auto left-auto opacity-25'>1</h2>
             <h1 className='text-center text-4xl text-white'>Playful Personality</h1>

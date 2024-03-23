@@ -10,7 +10,8 @@ export const dogData = [{
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
     breed: 'French Bulldog',
-    description: 'Puppy 1 is a charming female Frenchie with a sleek coat of fawn and white. Her playful antics and sweet demeanor make her the perfect companion for families seeking a loyal and affectionate furry friend.'
+    description: 'Puppy 1 is a charming female Frenchie with a sleek coat of fawn and white. Her playful antics and sweet demeanor make her the perfect companion for families seeking a loyal and affectionate furry friend.',
+    pupWeight: '6 - 9 lbs'
 },
 {
     name: 'Puppy 2',
@@ -24,7 +25,8 @@ export const dogData = [{
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
     breed: 'French Bulldog',
-    description: 'Meet Puppy 2, the handsome male French Bulldog with a striking brindle coat and soulful eyes. Known for his adventurous spirit and boundless energy, Max is always ready for fun-filled adventures with his new family.'
+    description: 'Meet Puppy 2, the handsome male French Bulldog with a striking brindle coat and soulful eyes. Known for his adventurous spirit and boundless energy, Max is always ready for fun-filled adventures with his new family.',
+    pupWeight: '6 - 9 lbs'
 },
 {
     name: 'Puppy 3',
@@ -38,7 +40,8 @@ export const dogData = [{
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
     breed: 'French Bulldog',
-    description: 'Puppy 3 is a delightful female Frenchie with a coat as black as midnight and a heart as pure as gold. Her gentle nature and loving disposition make her an ideal companion for anyone seeking a loyal and devoted furry companion.'
+    description: 'Puppy 3 is a delightful female Frenchie with a coat as black as midnight and a heart as pure as gold. Her gentle nature and loving disposition make her an ideal companion for anyone seeking a loyal and devoted furry companion.',
+    pupWeight: '6 - 9 lbs'
 },
 {
     name: 'Puppy 4',
@@ -52,7 +55,8 @@ export const dogData = [{
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
     breed: 'French Bulldog',
-    description: 'Puppy 4 is a playful male French Bulldog with a coat of creamy white and adorable bat ears that will steal your heart. With his affectionate personality and playful antics, Oliver is sure to bring endless joy and laughter into your home.'
+    description: 'Puppy 4 is a playful male French Bulldog with a coat of creamy white and adorable bat ears that will steal your heart. With his affectionate personality and playful antics, Oliver is sure to bring endless joy and laughter into your home.',
+    pupWeight: '6 - 9 lbs'
 },
 {
     name: 'Puppy 5',
@@ -66,7 +70,8 @@ export const dogData = [{
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
     breed: 'French Bulldog',
-    description: 'Puppy 5 is a graceful female Frenchie with a coat of rare blue and tan markings that shimmer in the sunlight. Her elegant demeanor and gentle nature make her the perfect addition to any loving family seeking a loyal and devoted companion.'
+    description: 'Puppy 5 is a graceful female Frenchie with a coat of rare blue and tan markings that shimmer in the sunlight. Her elegant demeanor and gentle nature make her the perfect addition to any loving family seeking a loyal and devoted companion.',
+    pupWeight: '6 - 9 lbs'
 },
 {
     name: 'Puppy 6',
@@ -80,7 +85,8 @@ export const dogData = [{
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
     breed: 'French Bulldog',
-    description: 'Puppy 6 is a spirited male French Bulldog with a coat of brindle and white that reflects his adventurous spirit. With his boundless energy and playful personality, Rocky is always up for an outdoor adventure or a cozy cuddle session on the couch.'
+    description: 'Puppy 6 is a spirited male French Bulldog with a coat of brindle and white that reflects his adventurous spirit. With his boundless energy and playful personality, Rocky is always up for an outdoor adventure or a cozy cuddle session on the couch.',
+    pupWeight: '6 - 9 lbs'
 },
 {
     name: 'Puppy 7',
@@ -94,7 +100,8 @@ export const dogData = [{
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
     breed: 'French Bulldog',
-    description: 'Puppy 7 is a precious female Frenchie with a coat of soft fawn and a heart full of love. Her sweet disposition and affectionate nature make her the perfect furry friend for families seeking a loyal and devoted companion.'
+    description: 'Puppy 7 is a precious female Frenchie with a coat of soft fawn and a heart full of love. Her sweet disposition and affectionate nature make her the perfect furry friend for families seeking a loyal and devoted companion.',
+    pupWeight: '6 - 9 lbs'
 },
 {
     name: 'Puppy 8',
@@ -108,7 +115,8 @@ export const dogData = [{
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
     breed: 'French Bulldog',
-    description: 'Puppy 8 is a dashing male French Bulldog with a coat of rare lilac and tan that sets him apart from the rest. With his charming personality and playful spirit, Leo is sure to capture the hearts of everyone he meets.'
+    description: 'Puppy 8 is a dashing male French Bulldog with a coat of rare lilac and tan that sets him apart from the rest. With his charming personality and playful spirit, Leo is sure to capture the hearts of everyone he meets.',
+    pupWeight: '6 - 9 lbs'
 },
 {
     name: 'Puppy 9',
@@ -122,6 +130,7 @@ export const dogData = [{
     momWeight: '18 - 20 lbs',
     dadWeight: '25 - 30 lbs',
     breed: 'French Bulldog',
-    description: 'Puppy 9 is an adorable female Frenchie with a coat of classic pied markings and a playful twinkle in her eye. Her friendly demeanor and gentle nature make her the perfect companion for families seeking a loving and affectionate furry friend.'
+    description: 'Puppy 9 is an adorable female Frenchie with a coat of classic pied markings and a playful twinkle in her eye. Her friendly demeanor and gentle nature make her the perfect companion for families seeking a loving and affectionate furry friend.',
+    pupWeight: '6 - 9 lbs'
 }
 ]
