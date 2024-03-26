@@ -7,6 +7,8 @@ import {motion} from 'framer-motion'
 import PupDetail from '@/app/components/puppiesComponents/pupDetail';
 import { TextRevealCardPreview } from '@/app/components/textText';
 import Parents from '@/app/components/puppiesComponents/parents';
+import Included from '@/app/components/puppiesComponents/included';
+import Form from '@/app/components/form';
 
 
 export default function Page() {
@@ -38,6 +40,8 @@ export default function Page() {
       </div>
       <PupDetail breed={breed as string} name={name as string} pupWeight={pupWeight as string} age={age as string} description={description as string} momsWeight={mom as string} dadsWeight={dad as string} birthday={birthday as string} gender={gender as string}  price={price} imgUrl={imgUrl as string}  />
       <Parents/>
+      <Included name={name as string} gender={gender as string} />
+      <Form />
     </>
   )
 }

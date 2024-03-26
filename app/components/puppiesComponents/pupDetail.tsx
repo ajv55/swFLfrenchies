@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import { Carousel } from 'flowbite-react';
@@ -40,7 +41,7 @@ export default function PupDetail({name, birthday, age, pupWeight, gender, breed
         <div className=' w-full flex justify-between'>
           <div className=' w-64 flex flex-col justify-start items-left px-2 py-1 gap-7'>
             <h1 className='text-4xl w-48 flex justify-center items-center gap-2'>{name} <span className='text-xs'>{gender === 'Male' ? <BsGenderMale size={35} color='lightBlue'/> : <BsGenderFemale size={35} color='lightPink'/> }</span></h1>
-            <h6 className='text-sm ml-1 underline underline-offset-4'>{breed}</h6>
+            <h6 className='text-sm ml-2.5 underline underline-offset-4'>{breed}</h6>
           </div>
           <div className=' w-56 relative flex justify-end items-start px-2 py-2'>
             
