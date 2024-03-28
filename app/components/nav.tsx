@@ -50,7 +50,7 @@ export default function Nav(prop: HamburgerProps) {
             <Image src={Logo}  alt="pup" style={{width: '100px', height: '100px'}}></Image>
             <GoX className="absolute top-0 right-0" size={43} color="white" onClick={handleMenu}/>
             </div>
-            <nav className='border flex flex-col justify-start items-center w-screen overflow-auto h-[78rem] mb-8 gap-14 '>
+            <nav className='flex flex-col justify-start items-center w-screen overflow-auto h-[78rem] mb-8 gap-14 '>
               <Link onClick={() => {setIsOpen(!isOpen); setAccordian(!accordian)}} href='/' className="text-white text-2xl  " >Home</Link>
               <Link onClick={() => {setIsOpen(!isOpen); setAccordian(!accordian)}}  href='/Puppies' className="text-white text-2xl " >Puppies</Link>
               <div className=" flex items-center gap-2">

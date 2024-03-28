@@ -65,7 +65,7 @@ export default function PupDetail({name, birthday, age, pupWeight, gender, breed
             <button className='  px-4 py-4 rounded-xl bg-gradient-to-tr from-orange-200 to-fuchsia-600 text-white text-xl drop-shadow-xl [text-shadow:2px_1px_1px_var(--tw-shadow-color)]  shadow-purple-800 hover:bg-gradient-to-br hover:from-purple-700 hover:to-fuchsia-400 hover:shadow-fuchsia-400'>Reserve Me</button>
           </div>
 
-          <div className=' flex flex-col gap-3 w-full h-content p-2'>
+          <div className=' flex flex-col justify-center items-center gap-3 w-full h-content p-2'>
             <h1 className='text-white text-4xl ml-3 font-light'>About {name}</h1>
 
             <div className='bg-slate-200 w-full mt-8 drop-shadow-lg shadow-lg shadow-fuchsia-200 h-24 rounded-md flex justify-evenly items-center'>
@@ -73,8 +73,8 @@ export default function PupDetail({name, birthday, age, pupWeight, gender, breed
               <h2 className=' p-1 w-40 text-sm'>Finacing & Installments available, <Link className='text-blue-700 hover:underline hover:underline-offset-4 text-[16px] ' href='/'>Learn More</Link> </h2>
             </div>
 
-            <div className=' bg-slate-200  drop-shadow-lg shadow-lg shadow-fuchsia-200 w-full h-[25rem] flex justify-center items-center rounded-md mb-10 mt-8'>
-              <p className='border text-center text-2xl'>{description}</p>
+            <div className=' bg-slate-200  drop-shadow-lg shadow-lg shadow-fuchsia-200 w-[22rem] h-[25rem] flex justify-center items-center rounded-md mb-10 mt-8 p-2'>
+              <p className='border text-center text-xl'>{description}</p>
             </div>
 
             <div className='w-full h-content gap-8  flex flex-wrap justify-evenly mt-7 mb-64'>
