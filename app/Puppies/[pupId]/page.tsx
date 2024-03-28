@@ -1,5 +1,5 @@
 'use client';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, usePathname } from 'next/navigation';
 import style from '@/app/style.module.css';
 import {motion} from 'framer-motion'
 

@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { use } from 'react';
 import { Carousel } from 'flowbite-react';
 import {BreadcrumbWrapper} from '../breadcrumb';
 import { Button } from 'flowbite-react';
@@ -12,6 +12,7 @@ import { GiSittingDog } from "react-icons/gi";
 import { BsGenderMale } from "react-icons/bs";
 import { BsGenderFemale } from "react-icons/bs";
 import { TextRevealCardPreview } from '../textText';
+import {  usePathname } from 'next/navigation';
 
 type PupDetailProps = {
     name: string,
@@ -29,9 +30,12 @@ type PupDetailProps = {
 }
 
 export default function PupDetail({name, birthday, age, pupWeight, gender, breed, weight, momsWeight, dadsWeight, imgUrl, price, description }: PupDetailProps) {
+
+  const pathname = usePathname();
+
   return (
     <div className=' w-full h-content mt-10 flex flex-col justify-center items-center'>
-        <BreadcrumbWrapper id={name} />
+        <BreadcrumbWrapper path={pathname.slice(1, 8)}  id={name} />
         <Carousel className=' w-full h-[300px] md:w-[32rem] md:h-[30rem] mb-7' >
             <Image src={imgUrl} alt='number' width={200} height={300}></Image>
             <Image src={imgUrl} alt='number' width={200} height={300}></Image>
