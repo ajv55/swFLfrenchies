@@ -13,7 +13,6 @@ export default function AboutUsHeader
         </div>
       <h1 className='text-white text-xl'><span className={`${alex_brush.className} text-6xl bg-gradient-to-br from-purple-400 via-pink-300 to-fuchsia-500 text-transparent bg-clip-text`}>Our Mission:</span> <br /> Bringing Joy Through Frenchie Pitbull Puppies</h1>
 
-     
     </div>
   )
 }
