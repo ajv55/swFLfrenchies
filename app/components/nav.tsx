@@ -57,13 +57,16 @@ export default function Nav(prop: HamburgerProps) {
                  <h1 className="text-white text-2xl  ">About Us</h1>
                  <CiCircleChevDown onClick={() => setAccordian(!accordian)} size={30} color="white"/>
               </div>
-              <AnimatePresence>{accordian && <motion.div initial={{scale: 0, opacity: 0, y:'-100%', rotate: 90}} animate={{scale: 0.5, y: '40%', rotate: 120}} exit={{scale: 0.1, opacity: 0.1, y: '-100%', rotate: 180}} transition={{ease: 'easeInOut', duration: 0.4}} whileInView={{scale: 1, opacity: 1, y: '0%', rotate: 0}} className=" shadow-md shadow-white w-[10rem] h-[10rem] flex flex-col justify-center items-center overflow-scroll gap-5 rounded-xl"><Link onClick={() => {
+              <AnimatePresence>{accordian && <motion.div initial={{scale: 0, opacity: 0, y:'-100%', rotate: 90}} animate={{scale: 0.5, y: '40%', rotate: 120}} exit={{scale: 0.1, opacity: 0.1, y: '-100%', rotate: 180}} transition={{ease: 'easeInOut', duration: 0.4}} whileInView={{scale: 1, opacity: 1, y: '0%', rotate: 0}} className=" shadow-md shadow-white w-[11rem] h-[11rem] flex flex-col justify-evenly items-center overflow-scroll  rounded-xl"><Link onClick={() => {
                 setIsOpen(!isOpen);
                 setAccordian(!accordian)
               }}  className="text-lg text-white" href='/About'>Our Mission</Link><Link onClick={() => {
                 setIsOpen(!isOpen);
                 setAccordian(!accordian)
-              }}  className="text-lg text-white" href='/Value'>Our Values</Link></motion.div>}</AnimatePresence>
+              }}  className="text-lg text-white" href='/Value'>Our Values</Link><Link onClick={() => {
+                setIsOpen(!isOpen);
+                setAccordian(!accordian)
+              }}  className="text-lg text-white" href='/privacy'>Privacy Policy</Link></motion.div>}</AnimatePresence>
               <Link onClick={() => {setIsOpen(!isOpen); setAccordian(!accordian)}}  href='/Contact' className="text-white text-2xl " >Contact Us</Link>
 
               
