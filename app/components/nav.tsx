@@ -39,9 +39,9 @@ export default function Nav(prop: HamburgerProps) {
 
 
   return (
-    <div className="flex justify-between w-full absolute bg-transparent overflow-auto z-10 ">
-    <div className="flex justify-between items-center w-full p-4">
-      <Image src={Logo} alt='home page' width={110} height={110}></Image>
+    <div className="flex justify-between items-center w-full h-32 absolute mt-2  bg-transparent overflow-auto z-10 ">
+    <div className="flex  justify-between items-center w-full lg:w-64 p-4">
+      <Image src={Logo} alt='home page' className="lg:w-[130px]  lg:h-[130px] lg:mt-5 lg:ml-5" width={110} height={110}></Image>
       <HiMenuAlt1 size={40} className="md:hidden" color="white" onClick={handleMenu}/>
     </div>
     <AnimatePresence>
@@ -73,10 +73,12 @@ export default function Nav(prop: HamburgerProps) {
             </nav>
       </motion.div>}
     </AnimatePresence>
-    <nav className="text-2xl text-white md:flex md:visible justify-evenly items-center border border-blue-500 w-full h-16 hidden">
+    <nav className="text-2xl text-white md:flex md:visible justify-evenly items-center w-4/5 h-24 hidden">
         <Link href='/'>Home</Link>
         <Link href='/Puppies'>Our Puppies</Link>
         <Link href='/Contact'>Contact Us</Link>
+        <Link href='/About'>About Us</Link>
+        <Link className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2 " href='/Puppies'>Available Puppies</Link>
     </nav>
     </div>
   )

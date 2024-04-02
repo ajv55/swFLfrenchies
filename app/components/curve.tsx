@@ -37,11 +37,13 @@ export default function Curve() {
             </svg>
         </div>
 
-        <div className='mt-64 mb-72 flex flex-col justify-start items-center gap-32'>
-           <h1 className={`${alex_brush.className} text-white text-center text-6xl  animate-pulse`}>The Puppies</h1>
-        {dogData.map((dd: DogData) => {
-            return <Link key={dd.name} href='/Puppies'><Card  price={dd.price} gender={dd.gender} age={dd.age} name={dd.name} imgUrl={dd.imgUrl} /></Link>
-          } )}
+        <div className='mt-64 mb-72 h-content flex flex-col justify-start items-center gap-32'>
+           <h1 className={`${alex_brush.className} text-white text-center text-6xl font-bold tracking-widest lg:text-8xl  animate-pulse`}>The Puppies</h1>
+        <div className='flex flex-col lg:flex-row lg:flex-wrap h-content justify-center items-center gap-44'>
+            {dogData.map((dd: DogData, index: number) => {
+                return <Link key={dd.name} href='/Puppies'><Card index={index} price={dd.price} gender={dd.gender} age={dd.age} name={dd.name} imgUrl={dd.imgUrl} /></Link>
+            } )}
+        </div>
         </div>
 
     </div>

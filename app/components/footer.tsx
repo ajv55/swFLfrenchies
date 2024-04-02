@@ -20,10 +20,14 @@ export default function Footer() {
         <div className=" flex flex-col justify-center items-start gap-2">
             <Link href='https://www.instagram.com/'><Image src={insta} alt="insta" width={30} height={30}></Image></Link>
         </div>
-        <div className="w-full flex justify-center items-center text-sm text-center gap-2 text-white">
-            <Link className=" hover:underline underline-offset-2" href='/'>Home</Link>
-            <Link className=" hover:underline underline-offset-2" href='/Puppies'>Available Puppies</Link>
-            <Link className=" hover:underline underline-offset-2" href='/Contact'>Contact Us</Link>
+        <div className=' flex flex-col justify-center items-center gap-9'>
+          <div className='border  gap-2 text-white'>
+            <Link className="text-sm lg:text-xl hover:underline underline-offset-2" href='/'>Home</Link>
+            <Link className="text-sm lg:text-xl hover:underline underline-offset-2" href='/'>Available Puppies</Link>
+            <Link className="text-sm lg:text-xl hover:underline underline-offset-2" href='/'>Contact Us</Link>
+          </div>
+          <Link className='hover:underline underline-offset-2 text-sm lg:text-lg text-white' href='/privacy'>Privacy Policy</Link>
+          <Link className='hover:underline underline-offset-2 text-sm lg:text-lg text-white' href='/About'>About Us</Link>
         </div>
         <div className=" w-full h-8 flex justify-center items-end mb-10 text-white">
           <p className="" >© {date} SWFLFrenchies. All rights reserved.</p>

@@ -36,8 +36,8 @@ export default function TimedModal() {
 
   return (
     <> 
-    {timeModal && <div className=" fixed backdrop-blur-2xl z-40  top-0 left-0 bg-transparent w-[24rem] h-screen flex flex-col justify-center items-center gap-6">
-         <FaWindowClose onClick={() => setTimeModal(false)} size={30} className="self-start ml-3" color="white"/>
+    {timeModal && <div className=" fixed backdrop-blur-2xl z-40 border  top-0 left-0 lg: bg-transparent lg:w-full w-[24rem] h-screen flex flex-col justify-center items-center gap-6">
+         <FaWindowClose onClick={() => setTimeModal(false)} size={30} className="absolute top-3 left-0 ml-3" color="white"/>
          <h1 className="text-4xl text-center text-white font-bold tracking-widest leading-loose">This website is still under construction. Any question please contact us.</h1>
          <h6 className="text-center text-white text-md font-light tracking-widest">SITE NEARLY READY</h6>
          <div className="w-[15rem] relative h-9 mb-2 rounded-2xl bg-slate-700 overflow-hidden">
