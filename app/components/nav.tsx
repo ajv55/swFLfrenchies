@@ -39,7 +39,7 @@ export default function Nav(prop: HamburgerProps) {
 
 
   return (
-    <div className="flex justify-between items-center w-full h-32 absolute mt-2  bg-transparent overflow-auto z-10 ">
+    <div className="flex justify-between items-center w-full h-32 absolute mt-2  bg-transparent  z-10 ">
     <div className="flex  justify-between items-center w-full lg:w-64 p-4">
       <Image src={Logo} alt='home page' className="lg:w-[130px]  lg:h-[130px] lg:mt-5 lg:ml-5" width={110} height={110}></Image>
       <HiMenuAlt1 size={40} className="md:hidden" color="white" onClick={handleMenu}/>
