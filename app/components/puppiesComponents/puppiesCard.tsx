@@ -21,20 +21,20 @@ type PuppiesCardProps = {
 
 export default function PuppiesCard({name, birthday, gender, price, age, description, index}: PuppiesCardProps) {
 
-  const ref = useRef(null);
+  // const ref = useRef(null);
 
-  const {scrollYProgress} = useScroll({
-    target: ref,
-    offset: ['start end', 'end end']
-  })
+  // const {scrollYProgress} = useScroll({
+  //   target: ref,
+  //   offset: ['start end', 'end end']
+  // })
 
-  const scale = useTransform(scrollYProgress, [0.2, 1], [0.4, 1], {ease: easeInOut});
-  const opacity = useTransform(scrollYProgress, [0.2, 0.6], [0.5, 1]);
+  // const scale = useTransform(scrollYProgress, [0.2, 1], [0.4, 1], {ease: easeInOut});
+  // const opacity = useTransform(scrollYProgress, [0.2, 0.6], [0.5, 1]);
 
 
   return (
 
-    <motion.div  ref={ref} initial={{scale: 0, opacity: 0 , translateX: '150%'}} animate={{translateX: '30%', scale: 0.5}} whileInView={{scale: 1, opacity: 1, translateX: '0%'}} viewport={{once: true}} transition={{duration: 1, ease: 'easeInOut', delay: index * 0.2 }} className='card relative lg:w-[24rem] w-[21rem] drop-shadow-xl h-[50rem] flex flex-col justify-center items-center gap-24 bg-fuchsia-100 mt-10 mb-8'>
+    <motion.div   initial={{scale: 0, opacity: 0 , translateX: '150%'}} animate={{translateX: '30%', scale: 0.5}} whileInView={{scale: 1, opacity: 1, translateX: '0%'}} viewport={{once: true}} transition={{duration: 0.5, ease: 'easeIn', delay: index * 0.2 }} className='card relative lg:w-[24rem] w-[21rem] drop-shadow-xl h-[50rem] flex flex-col justify-center items-center gap-24 bg-fuchsia-100 mt-10 mb-8'>
         <Image className=' absolute top-3 left-2'   src={Pup} alt='pup' width={352} height={100}></Image>
         <div className='[text-shadow:2px_1px_1px_var(--tw-shadow-color)] shadow-purple-300 flex flex-col justify-start items-start w-full h-content mt-72 p-2 gap-5'>
           <h1 className='text-3xl flex justify-center items-center gap-5'>{name} {gender === 'Male' ? <IoMdMale size={30} color='lightBlue' /> : <IoMdFemale size={30} color='lightPink' /> }</h1>

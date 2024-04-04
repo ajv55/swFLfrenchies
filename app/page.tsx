@@ -6,6 +6,7 @@ import Why from "./components/why";
 import Form from "./components/form";
 import Ready from "./components/ready";
 import TimedModal from "./components/timedModal";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
       <Curve />
       <Info />
       <Ready />
+      <p className=' mb-32 lg:text-4xl text-3xl text-center tracking-wide w-full p-3 lg:p-0 lg:w-[70%]'><span className='font-bold bg-gradient-to-tr from-blue-900 via-blue-600 to-blue-200 bg-clip-text text-transparent'>If you have any additional questions or concerns</span>, please don&#39;t hesitate to <Link href='/Contact' className='underline font-semibold underline-offset-4'>contact us</Link>. We&#39;re here to assist you in <span className='font-bold'>finding the perfect Frenchie Pitbull puppy to join your family!</span></p>
       <Form />
+      <p className="text-center mt-32 mb-32 text-3xl p-2 font-light tracking-wide"><span className="font-bold">Be sure to check</span> out our <Link className="underline font-semibold underline-offset-4" href='/faq'>FAQ</Link> page for answers to common questions and valuable insights into the <span className="font-bold bg-gradient-to-br from-purple-900 via-purple-600 to-purple-300 bg-clip-text text-transparent">world of Frenchie Pitbull puppies!</span></p>
       
     </div>
   );

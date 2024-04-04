@@ -22,8 +22,8 @@ export default function Footer() {
         </div>
         <div className=' flex w-full lg:w-[37%] flex-wrap justify-center items-center h-32 gap-9'>
            <Link className="text-sm lg:text-xl font-light tracking-wide hover:underline underline-offset-2 text-white hover:text-2xl hover:text-blue-300" href='/'>Home</Link>
-            <Link className="text-sm lg:text-xl font-light tracking-wide hover:underline underline-offset-2 text-white hover:text-2xl hover:text-purple-300" href='/'>Available Puppies</Link>
-            <Link className="text-sm lg:text-xl font-light tracking-wide hover:underline underline-offset-2 text-white hover:text-teal-300 hover:text-2xl" href='/'>Contact Us</Link>
+            <Link className="text-sm lg:text-xl font-light tracking-wide hover:underline underline-offset-2 text-white hover:text-2xl hover:text-purple-300" href='/Puppies'>Available Puppies</Link>
+            <Link className="text-sm lg:text-xl font-light tracking-wide hover:underline underline-offset-2 text-white hover:text-teal-300 hover:text-2xl" href='/Contact'>Contact Us</Link>
             <Link className='hover:underline underline-offset-2 text-sm font-light tracking-wide lg:text-xl text-white hover:text-2xl hover:text-pink-300' href='/privacy'>Privacy Policy</Link>
             <Link className='hover:underline underline-offset-2 text-sm font-light tracking-wide lg:text-xl text-white hover:text-2xl hover:text-cyan-400' href='/About'>About Us</Link>
             <Link className='hover:underline underline-offset-2 text-sm font-light tracking-wide lg:text-xl text-white hover:text-2xl hover:text-cyan-400' href='/faq'>FAQ&#39;s</Link>

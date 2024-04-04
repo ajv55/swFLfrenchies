@@ -36,7 +36,7 @@ export default function PupDetail({name, birthday, age, pupWeight, gender, breed
   return (
     <div className=' w-full h-content mt-10 flex flex-col justify-center items-center'>
         <BreadcrumbWrapper path={pathname.slice(1, 8)}  id={name} />
-        <Carousel className=' w-full md:w-[70%] md:h-[600px] mb-7' >
+        <Carousel className=' w-full h-[300px] md:w-[70%] md:h-[600px] mb-7' >
             <Image src={imgUrl} alt='number' width={200} height={300}></Image>
             <Image src={imgUrl} alt='number' width={200} height={300}></Image>
             <Image src={imgUrl} alt='number' width={200} height={300}></Image>

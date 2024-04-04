@@ -1,3 +1,4 @@
+import Link from "next/link"
 import AboutExtra from "../components/aboutComponents/aboutExtra"
 import AboutInfo from "../components/aboutComponents/aboutinfo"
 import AboutUsHeader from "../components/aboutComponents/aboutusheader"
@@ -6,7 +7,7 @@ import { alex_brush, dancing_script } from "../font/font"
 
 export default function Page() {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col w-full justify-center items-center">
         <AboutUsHeader/>
         <h3 className={`${dancing_script.className} mt-16 mb-14 text-center text-7xl bg-gradient-to-tr  from-teal-700 to-slate-400 bg-clip-text text-transparent`}>Our Mission Statement: </h3>
         <div style={{
@@ -19,7 +20,10 @@ export default function Page() {
         <div className="w-full h-[26rem] p-2 mt-20 mb-20">
           <p className="text-center text-2xl tracking-wide font-light">In essence, our mission is to be more than just a seller of Frenchie puppies; we strive to be a trusted partner and ally on your journey to pet parenthood, committed to enriching the lives of both you and your furry companion. Thank you for considering <span className={`${alex_brush.className} text-5xl  font-bold  bg-gradient-to-bl from-purple-400 to-fuchsia-400 bg-clip-text text-transparent`}>SWFLFrenchies</span> for your Frenchie puppy adoption journey.</p>
         </div>
-        <Form/>
+        <div className="w-full">
+          <Form/>
+        </div>
+        <p className="text-center mt-32 mb-32 text-3xl p-2 font-light tracking-wide"><span className="font-bold">Be sure to check</span> out our <Link className="underline underline-offset-4" href='/faq'>FAQ</Link> page for answers to common questions and valuable insights into the <span className="font-bold bg-gradient-to-br from-purple-900 via-purple-600 to-purple-300 bg-clip-text text-transparent">world of Frenchie Pitbull puppies!</span></p>
     </div>
   )
 }

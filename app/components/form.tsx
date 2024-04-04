@@ -31,7 +31,7 @@ export default function Form() {
 
 
   return (
-    <div className='flex relative justify-start lg:mb-5 lg:mt-5  bg-gradient-to-tl from-slate-200 via-slate-800 to-slate-200 items-center'>
+    <div className='flex relative justify-start  lg:mb-5 lg:mt-5  bg-gradient-to-tl from-slate-200 via-slate-800 to-slate-200 items-center'>
         
         <div className={style.shape}>
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
