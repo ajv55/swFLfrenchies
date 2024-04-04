@@ -33,7 +33,7 @@ export default function PuppiesList() {
   return (
     <div className=' w-full h-content flex flex-col justify-center items-center relative p-2'>
        <BreadcrumbWrapper path={pathname.slice(1,8)}/>
-        <h1 className={`${alex_brush.className} text-center w-full text-6xl mt-8 bg-gradient-to-tr from-fuchsia-300 to-purple-400 bg-clip-text text-transparent`}>Our Puppies</h1>
+        <h1 className={`${alex_brush.className} text-center font-bold tracking-wide lg:text-8xl w-full text-6xl lg:mb-16 mt-8 bg-gradient-to-tr from-fuchsia-300 to-purple-400 bg-clip-text text-transparent`}>Our Puppies</h1>
         <div className='lg:w-full lg:flex lg:flex-wrap lg:justify-center gap-8'>
           {dogData.map((dd: DogData, index: number) => {
               return <Link  key={dd.name} href={{
