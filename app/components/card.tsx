@@ -21,7 +21,7 @@ export default function Card({name, age, gender, price, imgUrl, index}: CardProp
 
     const {scrollYProgress} = useScroll({
         target: ref,
-        offset: ['start end', 'end end']
+        offset: ['end start', 'end end']
     });
 
     const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1.2]);
@@ -34,7 +34,7 @@ export default function Card({name, age, gender, price, imgUrl, index}: CardProp
   return (
     <motion.div style={{scale: scale, opacity: opacity, x,}}   ref={ref} className='bg-slate-200 w-[17rem] lg:w-[32rem] h-[24rem] lg:h-[40rem] flex flex-col justify-start items-center py-4 px-2 rounded-lg lg:rounded-2xl lg:shadow-md lg:shadow-orange-100'>
         <motion.div className='relative p-3'>
-            <Image src={imgUrl} alt={name} className='md:w-[30rem] h-[23rem] ' width={250} height={250}></Image>
+            <Image src={imgUrl} alt={name} className='lg:w-[30rem] lg:h-[23rem] ' width={250} height={250}></Image>
             <motion.h1 style={{scale: textScale, opacity: h1Opacity, x, }}  className='text-center text-xs lg:text-lg bg-orange-300  absolute top-0 right-0 px-3 py-1 rounded-2xl '>{age}</motion.h1>
         </motion.div>
         <div className='flex justify-evenly items-center w-full px-1 py-2'>

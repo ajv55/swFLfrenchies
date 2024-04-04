@@ -56,8 +56,8 @@ export default function Form() {
         sendEmailAction(formData);
         ref.current?.reset();
 
-    }} className='  lg:w-[43rem] rounded-md flex lg:absolute lg:right-6 lg:top-44 flex-col justify-start items-center w-full h-content p-1.5 mt-8 mb-8'>
-        <h1 className={`${alex_brush.className} text-center lg:hidden text-7xl`}>Contact Us</h1>
+    }} className='  lg:w-[43rem] rounded-md flex lg:absolute lg:right-6 lg:top-44 flex-col justify-start items-center w-full h-content p-1.5 mt-48 mb-48'>
+        <h1 className={`${alex_brush.className} text-center lg:hidden bg-gradient-to-bl from-teal-200 via-teal-600 to-teal-900 bg-clip-text text-transparent text-7xl`}>Contact Us</h1>
             <div className="relative z-0 w-full mb-5 group mt-7">
                 <input type="text" name="firstname" id="firstname" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
                 <label htmlFor="firstname" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Firstname</label>

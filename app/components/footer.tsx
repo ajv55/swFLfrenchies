@@ -20,7 +20,7 @@ export default function Footer() {
         <div className=" flex flex-col justify-center items-start gap-2">
             <Link href='https://www.instagram.com/'><Image src={insta} alt="insta" width={30} height={30}></Image></Link>
         </div>
-        <div className=' flex  w-[37%] flex-wrap justify-center items-center h-32 gap-9'>
+        <div className=' flex w-full lg:w-[37%] flex-wrap justify-center items-center h-32 gap-9'>
            <Link className="text-sm lg:text-xl font-light tracking-wide hover:underline underline-offset-2 text-white hover:text-2xl hover:text-blue-300" href='/'>Home</Link>
             <Link className="text-sm lg:text-xl font-light tracking-wide hover:underline underline-offset-2 text-white hover:text-2xl hover:text-purple-300" href='/'>Available Puppies</Link>
             <Link className="text-sm lg:text-xl font-light tracking-wide hover:underline underline-offset-2 text-white hover:text-teal-300 hover:text-2xl" href='/'>Contact Us</Link>
