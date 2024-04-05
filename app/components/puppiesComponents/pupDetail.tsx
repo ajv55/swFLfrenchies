@@ -47,7 +47,6 @@ export default function PupDetail({name, birthday, age, pupWeight, gender, breed
 
   const handleClick = () => {
     setModal(!modal);
-    console.log(modal)
   }
 
   useEffect(() => {
@@ -121,7 +120,7 @@ export default function PupDetail({name, birthday, age, pupWeight, gender, breed
             </div>
           <div className=' flex justify-evenly items-center lg:mt-16 lg:bg-slate-200 lg:rounded-xl lg:w-[60%] w-full h-28 lg:h-[10rem] mt-7 mb-5'> 
             <button onClick={handleClick} className='  px-4 py-4 rounded-xl bg-gradient-to-tr from-orange-200 to-fuchsia-600 text-white lg:text-4xl text-xl drop-shadow-xl [text-shadow:2px_1px_1px_var(--tw-shadow-color)]  shadow-purple-800 hover:bg-gradient-to-br hover:from-purple-700 hover:to-fuchsia-400 hover:shadow-fuchsia-400'>Ask About Me</button>
-            <button className='  px-4 py-4 rounded-xl bg-gradient-to-tr from-orange-200 to-fuchsia-600 text-white lg:text-4xl text-xl drop-shadow-xl [text-shadow:2px_1px_1px_var(--tw-shadow-color)]  shadow-purple-800 hover:bg-gradient-to-br hover:from-purple-700 hover:to-fuchsia-400 hover:shadow-fuchsia-400'>Reserve Me</button>
+            <Link href='https://buy.stripe.com/test_3cscOcc0x59mbKMdQQ' className='  px-4 py-4 rounded-xl bg-gradient-to-tr from-orange-200 to-fuchsia-600 text-white lg:text-4xl text-xl drop-shadow-xl [text-shadow:2px_1px_1px_var(--tw-shadow-color)]  shadow-purple-800 hover:bg-gradient-to-br hover:from-purple-700 hover:to-fuchsia-400 hover:shadow-fuchsia-400'>Reserve Me</Link>
           </div>
 
           <div className=' flex flex-col justify-center lg:mt-20 items-center gap-3 w-full h-content p-2'>
