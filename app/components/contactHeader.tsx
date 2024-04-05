@@ -18,7 +18,7 @@ export function BackgroundGradientAnimationDemo() {
         </BackgroundGradientAnimation>
         <LampDemo />
         <div className=" mt-24 mb-24  w-full flex justify-center items-center">
-          <p className="text-4xl text-center w-[80%]"><span className="font-bold bg-gradient-to-tr from-cyan-900 via-cyan-500 to-cyan-200 bg-clip-text text-transparent">Before reaching out</span>, you might find answers to your questions in our FAQ section. Check it out our <Link className="underline underline-offset-4" href='/faq'>FAQ page</Link>.</p>
+          <p className="text-4xl lg:text-5xl font-light tracking-wider text-center w-[80%]"><span className="font-bold bg-gradient-to-tr from-cyan-900 via-cyan-500 to-cyan-200 bg-clip-text text-transparent">Before reaching out</span>, you might find answers to your questions in our FAQ section. Check it out our <Link className="underline underline-offset-4" href='/faq'>FAQ page</Link>.</p>
         </div>
     </>
   );

@@ -34,7 +34,7 @@ export default function Why() {
                         <h2 className='text-2xl lg:text-4xl font-bold tracking-wide text-center'>Transparent Practices</h2>
                         <p className='text-sm lg:text-xl font-light tracking-normal text-center'>We believe in transparency and honesty in all our dealings. <span className='font-bold'>You can trust us to provide accurate information about our puppies, their lineage, and health records.</span> We&#39;re happy to answer any questions you may have and provide references from satisfied customers.</p>
                     </div>
-                    <div className='  w-[20rem] lg:w-[47rem] h-[19rem] lg:h-[28rem] bg-slate-200 shadow-xl rounded-md flex flex-col justify-center items-center p-4 gap-4 lg:gap-10 '>
+                    <div className='  w-[20rem] lg:w-[47rem] h-content lg:h-[28rem] bg-slate-200 shadow-xl rounded-md flex flex-col justify-center items-center p-4 gap-4 lg:gap-10 '>
                         <BsPersonFillCheck className='lg:w-32 lg:h-32' size={65}/>
                         <h2 className='text-2xl lg:text-4xl font-bold tracking-wide text-center'>Satisfaction Guaranteed</h2>
                         <p className='text-sm lg:text-xl font-light tracking-normal text-center'>Your satisfaction is our top priority. <span className='font-bold'>We strive to make your experience with us enjoyable and stress-free.</span> From the moment you inquire about a puppy to long after you&#39;ve welcomed them into your home, we&#39;re dedicated to ensuring you&#39;re completely satisfied with your Frenchie companion.</p>

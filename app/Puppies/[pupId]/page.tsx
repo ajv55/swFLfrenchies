@@ -42,9 +42,11 @@ export default function Page() {
       <PupDetail breed={breed as string} name={name as string} pupWeight={pupWeight as string} age={age as string} description={description as string} momsWeight={mom as string} dadsWeight={dad as string} birthday={birthday as string} gender={gender as string}  price={price} imgUrl={imgUrl as string}  />
       <Parents/>
       <Included name={name as string} gender={gender as string} />
-      <p className=' mb-32 mt-32 lg:text-4xl text-3xl text-center tracking-wide w-full p-3 lg:p-0 lg:w-[70%]'><span className='font-bold bg-gradient-to-tr from-blue-900 via-blue-600 to-blue-200 bg-clip-text text-transparent'>If you have any additional questions or concerns</span> not addressed here, please don&#39;t hesitate to <Link href='/Contact' className='underline underline-offset-4'>contact us</Link>. We&#39;re here to assist you in <span className='font-bold'>finding the perfect Frenchie Pitbull puppy to join your family!</span></p>
+      <div className='flex justify-center items-center w-full'>
+        <p className=' mb-32 lg:mb-20 mt-32 lg:text-5xl text-3xl text-center  tracking-wide w-full p-3 lg:p-0 lg:w-[70%]'><span className='font-bold bg-gradient-to-tr from-blue-900 via-blue-600 to-blue-200 bg-clip-text text-transparent'>If you have any additional questions or concerns</span> not addressed here, please don&#39;t hesitate to <Link href='/Contact' className='underline underline-offset-4 hover:text-4xl hover:text-purple-400'>contact us</Link>. We&#39;re here to assist you in <span className='font-bold'>finding the perfect Frenchie Pitbull puppy to join your family!</span></p>
+      </div>
       <Form />
-      <p className="text-center mt-32 mb-32 text-3xl p-2 font-light tracking-wide"><span className="font-bold">Be sure to check</span> out our <Link className="underline underline-offset-4" href='/faq'>FAQ</Link> page for answers to common questions and valuable insights into the <span className="font-bold bg-gradient-to-br from-purple-900 via-purple-600 to-purple-300 bg-clip-text text-transparent">world of Frenchie Pitbull puppies!</span></p>
+      <p className="text-center mt-32 mb-32  text-3xl p-2 font-light tracking-wide"><span className="font-bold">Be sure to check</span> out our <Link className="underline underline-offset-4" href='/faq'>FAQ</Link> page for answers to common questions and valuable insights into the <span className="font-bold bg-gradient-to-br from-purple-900 via-purple-600 to-purple-300 bg-clip-text text-transparent">world of Frenchie Pitbull puppies!</span></p>
     </>
   )
 }
