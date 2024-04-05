@@ -29,7 +29,7 @@ export default function PrivacyExtra() {
           <ul className=' list-inside list-disc w-[22rem] p-2 flex flex-col justify-start items-center gap-12 mt-14'>
               <li className='text-lg text-left font-light tracking-wide '><span className='font-bold'>We reserve the right to update or amend this privacy policy at any time</span> to reflect changes in our business practices, legal requirements, or technological advancements. We encourage you to review this policy periodically for any updates.</li> 
           </ul>
-          <p className='text-xl text-center mt-20 p-2'>If you have any questions, concerns, or requests regarding our privacy policy or the handling of your personal information, please contact us</p>
+          <p className='text-xl text-center mt-20 p-2'><span className='font-bold'>If you have any questions, concerns, or requests regarding</span> our privacy policy or the handling of your personal information, please contact us</p>
         </div>
     </div>
   )

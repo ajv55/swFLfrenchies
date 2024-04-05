@@ -1,6 +1,12 @@
+
 import style from '@/app/style.module.css';
 
+
+
 export default function FaqHeader() {
+
+  
+
   return (
     <div className='bg-gradient-to-tl from-slate-700 via-slate-600 to-slate-500 relative w-full h-[37rem] flex justify-center items-center'>
         <div className={style.custom}>

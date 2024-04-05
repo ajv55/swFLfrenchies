@@ -14,7 +14,7 @@ export default function Page() {
         <PrivacyInfo />
         <PrivacyExtra />
         <Form />
-        <p className='text-2xl text-center font-light tracking-wide p-2 mb-32 mt-10'>Thank you for trusting <span className={`${alex_brush.className} text-4xl bg-gradient-to-br from-purple-500 via-slate-400 to-pink-300 bg-clip-text text-transparent`}>SWFLFrenchies</span>. Your privacy and security are of utmost importance to us.</p>
+        <p className='text-2xl text-center font-light tracking-wide p-2 mb-20 mt-10'>Thank you for trusting <span className={`${alex_brush.className} text-4xl bg-gradient-to-br from-purple-500 via-slate-400 to-pink-300 bg-clip-text text-transparent`}>SWFLFrenchies</span>. Your privacy and security are of <span className='font-bold'>utmost importance to us.</span></p>
     </div>
   )
 }

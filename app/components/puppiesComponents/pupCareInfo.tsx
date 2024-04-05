@@ -38,6 +38,7 @@ export default function PupCareInfo() {
                 
             </ul>
         </div>
+        <p className='text-3xl text-center font-light tracking-wide p-2'>By providing your <span className='font-bold bg-gradient-to-br from-pink-900 via-pink-600 to-pink-200 bg-clip-text text-transparent'>Frenchie puppy with love, care, and attention</span>, you&#39;ll ensure they live a <span className='font-bold'>happy</span> and <span className='font-bold'>fulfilling life</span> as part of your family.</p>
     </div>
   )
 }
