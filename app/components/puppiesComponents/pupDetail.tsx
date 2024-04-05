@@ -1,9 +1,7 @@
 'use client';
 import Image from 'next/image';
-import React, { use } from 'react';
 import { Carousel } from 'flowbite-react';
 import {BreadcrumbWrapper} from '../breadcrumb';
-import { Button } from 'flowbite-react';
 import style from '@/app/style.module.css';
 import Link from 'next/link';
 import { BsCake2Fill } from "react-icons/bs";
@@ -11,8 +9,13 @@ import { FaWeightScale } from "react-icons/fa6";
 import { GiSittingDog } from "react-icons/gi";
 import { BsGenderMale } from "react-icons/bs";
 import { BsGenderFemale } from "react-icons/bs";
-import { TextRevealCardPreview } from '../textText';
 import {  usePathname } from 'next/navigation';
+import { sendEmail } from '@/app/action/sendEmail';
+import { useFormState, useFormStatus } from 'react-dom';
+import { useEffect, useRef, useState } from 'react';
+import toast from 'react-hot-toast';
+import { alex_brush } from '@/app/font/font';
+import { FaWindowClose } from "react-icons/fa";
 
 type PupDetailProps = {
     name: string,
@@ -32,9 +35,65 @@ type PupDetailProps = {
 export default function PupDetail({name, birthday, age, pupWeight, gender, breed, weight, momsWeight, dadsWeight, imgUrl, price, description }: PupDetailProps) {
 
   const pathname = usePathname();
+  const [modal, setModal] = useState<boolean>(false);
+  const ref = useRef<HTMLFormElement>(null);
+
+  const [sendEmailState, sendEmailAction] = useFormState(sendEmail, {
+    error: null,
+    success: false,
+})
+
+
+
+  const handleClick = () => {
+    setModal(!modal);
+    console.log(modal)
+  }
+
+  useEffect(() => {
+    if(sendEmailState.success) {
+        toast.success('Email sent successfully!')
+        }
+    
+    if ( sendEmailState.error) {
+    toast.error('Message was not sent!')
+    }
+
+}, [sendEmailState])
+
 
   return (
-    <div className=' w-full h-content mt-10 flex flex-col justify-center items-center'>
+    <div className=' w-full h-content mt-10 flex  flex-col justify-center  relative items-center'>
+      {modal && <div className='top-0  backdrop-blur-2xl w-full flex justify-center items-center h-screen z-10  bg-transparent fixed'>
+        <FaWindowClose onClick={handleClick} color='lightBlue' className=' absolute top-2 left-2' size={30}/>
+      <form ref={ref} action={async (formData) => {
+        sendEmailAction(formData);
+        ref.current?.reset()
+        setModal(!modal)
+
+    }} className='  lg:w-[43rem] rounded-md flex lg:absolute lg:right-6 lg:top-2 bg-slate-100 flex-col justify-start items-center mt-16 w-[95%] h-[37rem] p-1.5'>
+        <h1 className={`${alex_brush.className} text-center lg:hidden bg-gradient-to-bl from-fuchsia-700 via-fuchsia-400 to-fuchsia-200 bg-clip-text text-transparent text-7xl`}>Contact Us</h1>
+            <div className="relative p-2 z-0 w-full mb-5 group mt-7">
+                <input type="text" name="firstname" id="firstname" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                <label htmlFor="firstname" className="peer-focus:font-medium absolute text-sm text-grey-800 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Firstname</label>
+            </div>
+            <div className="relative p-2 z-0 w-full mb-5 group">
+                <input type="text" name="lastname" id="lastname" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                <label htmlFor="lastname" className="peer-focus:font-medium absolute text-sm text-grey-800 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Lastname</label>
+            </div>
+            <div className="relative p-2 z-0 w-full mb-5 group">
+                <input type="email" name="email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-grey-800 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+            </div>
+            <div className="relative p-2 z-0 w-full mb-5 group">
+                <textarea name="message" id="message" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                <label htmlFor="message" className="peer-focus:font-medium absolute text-sm text-grey-800 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
+            </div>
+            <button type="submit" className='text-white bg-gradient-to-r from-fuchsia-500 via-fuchsia-600 to-fuchsia-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm lg:text-2xl lg:mt-5 px-5 py-2.5 text-center me-2 mb-2' >Submit</button>
+        </form>
+        </div>}
+
+
         <BreadcrumbWrapper path={pathname.slice(1, 8)}  id={name} />
         <Carousel className=' w-full h-[300px] md:w-[70%] md:h-[600px] mb-7' >
             <Image src={imgUrl} alt='number' width={200} height={300}></Image>
@@ -61,7 +120,7 @@ export default function PupDetail({name, birthday, age, pupWeight, gender, breed
                 </svg>
             </div>
           <div className=' flex justify-evenly items-center lg:mt-16 lg:bg-slate-200 lg:rounded-xl lg:w-[60%] w-full h-28 lg:h-[10rem] mt-7 mb-5'> 
-            <button className='  px-4 py-4 rounded-xl bg-gradient-to-tr from-orange-200 to-fuchsia-600 text-white lg:text-4xl text-xl drop-shadow-xl [text-shadow:2px_1px_1px_var(--tw-shadow-color)]  shadow-purple-800 hover:bg-gradient-to-br hover:from-purple-700 hover:to-fuchsia-400 hover:shadow-fuchsia-400'>Ask About Me</button>
+            <button onClick={handleClick} className='  px-4 py-4 rounded-xl bg-gradient-to-tr from-orange-200 to-fuchsia-600 text-white lg:text-4xl text-xl drop-shadow-xl [text-shadow:2px_1px_1px_var(--tw-shadow-color)]  shadow-purple-800 hover:bg-gradient-to-br hover:from-purple-700 hover:to-fuchsia-400 hover:shadow-fuchsia-400'>Ask About Me</button>
             <button className='  px-4 py-4 rounded-xl bg-gradient-to-tr from-orange-200 to-fuchsia-600 text-white lg:text-4xl text-xl drop-shadow-xl [text-shadow:2px_1px_1px_var(--tw-shadow-color)]  shadow-purple-800 hover:bg-gradient-to-br hover:from-purple-700 hover:to-fuchsia-400 hover:shadow-fuchsia-400'>Reserve Me</button>
           </div>
 
