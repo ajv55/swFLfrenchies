@@ -17,8 +17,8 @@ export default function Page() {
         </div>
         <AboutExtra />
         <AboutInfo/>
-        <div className="w-full h-[26rem] lg:h-[3rem] p-2 lg:mt-28 mt-20 mb-20">
-          <p className="text-center text-2xl lg:text-4xl tracking-wide font-light"><span className="font-bold">In essence, our mission is to be more than just a seller</span> of Frenchie puppies; we strive to be a trusted partner and ally on your journey to pet parenthood, committed to enriching the lives of both you and your furry companion. Thank you for considering <span className={`${alex_brush.className} text-5xl  font-bold  bg-gradient-to-bl from-purple-400 to-fuchsia-400 bg-clip-text text-transparent`}>SWFLFrenchies</span> for your Frenchie puppy adoption journey.</p>
+        <div className="w-full flex justify-center items-center h-[26rem] lg:h-[3rem] p-2 lg:mt-28 mt-20 mb-20">
+          <p className="text-center text-2xl lg:w-[85%] lg:mt-28 lg:text-4xl tracking-wide font-light"><span className="font-bold">In essence, our mission is to be more than just a seller</span> of Frenchie puppies; we strive to be a trusted partner and ally on your journey to pet parenthood, committed to enriching the lives of both you and your furry companion. Thank you for considering <span className={`${alex_brush.className} text-5xl  font-bold  bg-gradient-to-bl from-purple-400 to-fuchsia-400 bg-clip-text text-transparent`}>SWFLFrenchies</span> for your Frenchie puppy adoption journey.</p>
         </div>
         <div className="w-full">
           <Form/>
