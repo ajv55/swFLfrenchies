@@ -1,8 +1,8 @@
 export const dogData = [{
-    name: 'Puppy 1',
+    name: 'Turbo',
     imgUrl: '/pup.jpg',
     birthday: 'Jan 12, 2024',
-    price: 2500,
+    price: 6500,
     gender: 'Male',
     color: 'tan with brown',
     id: 1,
@@ -11,7 +11,8 @@ export const dogData = [{
     dadWeight: '25 - 30 lbs',
     breed: 'French Bulldog',
     description: 'Puppy 1 is a charming female Frenchie with a sleek coat of fawn and white. Her playful antics and sweet demeanor make her the perfect companion for families seeking a loyal and affectionate furry friend.',
-    pupWeight: '6 - 9 lbs'
+    pupWeight: '6 - 9 lbs',
+    headerGIF: "/turbo.GIF",
 },
 {
     name: 'Puppy 2',

@@ -21,6 +21,8 @@ export async function POST(req: NextRequest , res: NextResponse) {
         console.log(response)
         console.log('event:', event.type);
 
+        
+
         return NextResponse.json({status: 'success', event: event.type})
         
     } catch (error) {
